@@ -14,5 +14,10 @@ namespace RockyApp.Data
         {
             get; set;
         }
+
+        public DbSet<ApplicationType> ApplicationType
+        {
+            get; set;
+        }
     }
 }

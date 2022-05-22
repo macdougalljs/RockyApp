@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace RockyApp.Models
 {
@@ -14,7 +15,7 @@ namespace RockyApp.Models
         {
             get; set;
         }
-
+        [DisplayName("Display Order")]
         public int DisplayOrder
         {
             get; set;
