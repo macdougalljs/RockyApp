@@ -22,5 +22,12 @@ namespace RockyApp.Controllers
             IEnumerable<Category> objList = _db.Category; // doing it like this will retrieve all of the categories from the database and store in objlist
             return View(objList);
         }
+
+
+        // GET - CREATE
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
