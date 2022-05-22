@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RockyApp.Data;
+using RockyApp.Models;
+using System.Collections.Generic;
 
 namespace RockyApp.Controllers
 {
@@ -17,7 +19,8 @@ namespace RockyApp.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            IEnumerable<Category> objList = _db.Category; // doing it like this will retrieve all of the categories from the database and store in objlist
+            return View(objList);
         }
     }
 }
