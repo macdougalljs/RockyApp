@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockyApp", "RockyApp\RockyApp.csproj", "{90B8DAAA-1D8D-46C3-BF50-F7DFB055B393}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90B8DAAA-1D8D-46C3-BF50-F7DFB055B393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90B8DAAA-1D8D-46C3-BF50-F7DFB055B393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90B8DAAA-1D8D-46C3-BF50-F7DFB055B393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90B8DAAA-1D8D-46C3-BF50-F7DFB055B393}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {553DA190-FDA2-4CF4-BFF9-49F697FB13CF}
+	EndGlobalSection
+EndGlobal
