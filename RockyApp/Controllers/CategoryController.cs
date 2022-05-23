@@ -7,14 +7,14 @@ namespace RockyApp.Controllers
 {
     public class CategoryController : Controller
     {
-        
+
         // the addDbContext was already added in Startup.Cs, so we create a Constructor
 
         private readonly ApplicationDbContext _db;
 
         public CategoryController(ApplicationDbContext db)  // this generates an INSTANCE of the DbContext from the DI
         {
-        _db = db;
+            _db = db;
         }
 
         public IActionResult Index()
@@ -35,9 +35,14 @@ namespace RockyApp.Controllers
         [ValidateAntiForgeryToken]  //  validates token is still valid and hasn't been tampered
         public IActionResult Create(Category obj)
         {
-            _db.Category.Add(obj);
-            _db.SaveChanges();
-            return RedirectToAction("Index"); 
+            if (ModelState.IsValid)
+            {
+                _db.Category.Add(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+           
+           return View(obj);
         }
     }
 }
