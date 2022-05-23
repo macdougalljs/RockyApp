@@ -111,12 +111,8 @@ namespace RockyApp.Controllers
 
             _db.Category.Remove(obj);
             _db.SaveChanges();
-            return RedirectToAction("Index");
-
-
-           
+            return RedirectToAction("Index");        
         }
-
 
     }
 }
